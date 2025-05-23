@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registo - MovieFans Backoffice</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f4f6f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .register-box {
+      width: 400px;
+      background: white;
+      padding: 25px;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .register-box .btn-success {
+      width: 100%;
+    }
+    .register-box .links {
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="register-box">
+  <h3 class="text-center">Criar Nova Conta</h3>
+  <form action="/register" method="POST">
+    <div class="form-group">
+      <label for="nome">Nome de utilizador</label>
+     <input type="text" class="form-control" id="username" name="username" placeholder="username" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Senha</label>
+      <input type="password" class="form-control" id="password" name="password" placeholder="Senha" required>
+    </div>
+    <div class="form-group">
+      <label for="confirm">Confirmar Senha</label>
+      <input type="password" class="form-control" id="confirm" name="confirm" placeholder="Confirmar senha" required>
+    </div>
+    <button type="submit" class="btn btn-success">Criar conta</button>
+    <div class="links">
+      <a href="/login.html">Já tenho conta</a>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
